@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <section>
+            <img class="mySlides"
+                src="https://tse3.mm.bing.net/th/id/OIP.gezUVlT7wgT4y3YnQ0J3wAHaLH?rs=1&pid=ImgDetMain&o=7&rm=3"
+                style="height:500px;">
+            <img class="mySlides"
+                src="https://img.readthistwice.com/unsafe/480x720/books/1b8dfecb-db60-4fb2-ad24-6fdb5eb0dab4.jpg"
+                style="height:500px;">
+            <img class="mySlides"
+                src="https://tse1.mm.bing.net/th/id/OIP.jRojW-l92iKT7Nb32VAiKAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                style="height:500px;">
+            <img class="mySlides"
+                src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781481445634/spy-ski-school-9781481445634_hr.jpg"
+                style="height:500px;">
+            <img class="mySlides"
+                src="https://th.bing.com/th/id/R.f1f9373ed6db4f57d89586cecedbf5e6?rik=QM9eLiUcMfxdVQ&pid=ImgRaw&r=0"
+                style="height:500px;">
+                <img class="mySlides" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781481477857/spy-school-goes-south-9781481477857_hr.jpg"
+                    style="height:500px;">
+                <img class="mySlides" src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534424708/spy-school-british-invasion-9781534424708_hr.jpg"
+                    style="height:500px;">
+                <img class="mySlides" src="https://tse1.mm.bing.net/th/id/OIP._whF4_f06cNtr8rp3lOTGwHaLM?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    style="height:500px;">
+                <img class="mySlides"
+                    src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781534479449/spy-school-at-sea-9781534479449_hr.jpg"
+                    style="height:500px;">
+                <img class="mySlides"
+                    src="https://tse4.mm.bing.net/th/id/OIP.7djNXTw1kPNPXSfSWzi_oAHaLM?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    style="height:500px;">
+        </section>
+        <script>
+            var myIndex = 0;
+            carousel();
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+</body>
+</html>
